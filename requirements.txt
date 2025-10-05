@@ -1,0 +1,7 @@
+pyaudio
+SpeechRecognition
+gTTS
+adafruit-circuitpython-vcnl4040
+adafruit-circuitpython-rgb-display
+Pillow
+ollama
