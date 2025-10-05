@@ -40,9 +40,20 @@ pip install -r requirements.txt
 
 Run the main script: Approach the device to start interaction and follow spoken prompts.
 
-## Project Documentation and Design
+## State Machine Diagram
 
-The repository includes detailed documentation on the design process, state machine logic, hardware and software architecture, dialogue scripts, and peer review notes.
+```mermaid
+stateDiagram-v2
+    [*] --> Idle
+    Idle --> AwaitingConfirmation : Proximity detected
+    AwaitingConfirmation --> DeliverWord : Affirmative response
+    AwaitingConfirmation --> Idle : Timeout or negative response
+    DeliverWord --> AwaitEtymologyPrompt : Word delivered
+    AwaitEtymologyPrompt --> DeliverEtymology : Affirmative respomse
+    AwaitEtymologyPrompt --> AwaitReset : Negative response/ timeout
+    DeliverEtymology --> AwaitReset : Etymology delivered
+    AwaitReset --> Idle : User moves away
+```
 
 ## Future Improvements
 
