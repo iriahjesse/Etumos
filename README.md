@@ -1,7 +1,7 @@
-# WordBot - Interactive Word of the Day Assistant
+# Etumos - Interactive Word of the Day Assistant
 
 ## Overview
-WordBot is an educational Raspberry Pi-powered voice assistant designed to teach users a new word daily, complete with spelling, definition, examples, and optional etymology. The system employs a proximity sensor to initiate interaction, leverages a local LLM via Ollama to fetch daily word data, and uses speech recognition and text-to-speech for natural voice conversations.
+Etumos is an educational Raspberry Pi-powered voice assistant designed to teach users a new word daily, complete with spelling, definition, examples, and optional etymology. The system employs a proximity sensor to initiate interaction, leverages a local LLM via Ollama to fetch daily word data, and uses speech recognition and text-to-speech for natural voice conversations.
 
 The design emphasizes managing user expectations around latency and delivering information in digestible segments to encourage user engagement and learning.
 
@@ -36,7 +36,7 @@ Clone or download this repository and enter the directory.
 Install the required Python packages:
 pip install -r requirements.txt
 
-### Running the WordBot
+### Running the Etumos
 
 Run the main script: Approach the device to start interaction and follow spoken prompts.
 
