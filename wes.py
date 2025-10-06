@@ -73,7 +73,7 @@ except Exception as e:
 p = pyaudio.PyAudio()
 MIC_DEVICE_INDEX = 0 
 
-def speak(text, source="WISP"):
+def speak(text, source="WES"):
     """Converts text to speech and plays it."""
     print(f"{source}: {text}")
     try:
@@ -204,11 +204,11 @@ def set_status_screen(color_rgb, label, proximity_value):
 # --- MAIN LOOP (The State Machine) ---
 
 def main_loop():
-    """The main state machine for W.I.S.P., triggered by proximity."""
+    """The main state machine for W.E.S., triggered by proximity."""
     global last_delivery_date, current_word, word_given 
     
     # Initialize state
-    speak("W.I.S.P. Initialized. Entering Deep Sleep State. Waiting for proximity.")
+    speak("W.E.S. Initialized. Entering Deep Sleep State. Waiting for proximity.")
 
     while True:
         today = date.today()
