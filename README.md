@@ -1,4 +1,4 @@
-# W.I.S.P - Interactive Word of the Day Assistant
+# W.I.S.P. - Interactive Word of the Day Assistant
 
 ## Overview
 Etumos is an educational Raspberry Pi-powered voice assistant designed to teach users a new word daily, complete with spelling, definition, examples, and optional etymology. The system employs a proximity sensor to initiate interaction, leverages a local LLM via Ollama to fetch daily word data, and uses speech recognition and text-to-speech for natural voice conversations.
@@ -36,7 +36,7 @@ Clone or download this repository and enter the directory.
 Install the required Python packages:
 pip install -r requirements.txt
 
-### Running the W.I.S.P
+### Running the W.I.S.P.
 
 Run the main script: Approach the device to start interaction and follow spoken prompts.
 
